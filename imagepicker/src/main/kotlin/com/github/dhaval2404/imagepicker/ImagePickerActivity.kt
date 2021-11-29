@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.github.dhaval2404.imagepicker.constant.CameraType
 import com.github.dhaval2404.imagepicker.constant.ImageProvider
 import com.github.dhaval2404.imagepicker.provider.CameraProvider
 import com.github.dhaval2404.imagepicker.provider.CompressionProvider
@@ -76,7 +77,8 @@ class ImagePickerActivity : AppCompatActivity() {
                 savedInstanceState ?: mGalleryProvider?.startIntent()
             }
             ImageProvider.CAMERA -> {
-                mCameraProvider = CameraProvider(this)
+                val cameraType = intent?.getSerializableExtra(ImagePicker.EXTRA_CAMERA_TYPE) as CameraType? ?: CameraType.CAMERA_PHOTO
+                mCameraProvider = CameraProvider(this, cameraType)
                 mCameraProvider?.onRestoreInstanceState(savedInstanceState)
                 // Pick Camera Image
                 savedInstanceState ?: mCameraProvider?.startIntent()

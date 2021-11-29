@@ -12,3 +12,8 @@ enum class ImageProvider {
     CAMERA,
     BOTH
 }
+
+enum class CameraType {
+    CAMERA_PHOTO,
+    CAMERA_VIDEO
+}

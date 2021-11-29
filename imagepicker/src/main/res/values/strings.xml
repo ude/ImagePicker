@@ -7,8 +7,7 @@
     <string name="title_gallery">Gallery</string>
     <string name="title_camera">Camera</string>
 
-     <string name="permission_camera_denied">
-        <![CDATA[Camera permission is needed to take a picture. Please allow permission from Settings > Permissions.]]></string>
+     <string name="permission_camera_denied">"         <![CDATA[Camera permission is needed to take a picture. Please allow permission from Settings > Permissions.]]>"</string>
 
     <string name="error_failed_to_create_camera_image_file">Failed to create Camera image file</string>
     <string name="error_failed_pick_gallery_image">Failed to pick Gallery image</string>

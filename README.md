@@ -1,4 +1,4 @@
-# 📸Image Picker Library for Android
+# 📸 Media Picker Library for Android
 
 [![Download](https://jitpack.io/v/Dhaval2404/ImagePicker.svg)](https://jitpack.io/#Dhaval2404/ImagePicker)
 [![Releases](https://img.shields.io/github/release/dhaval2404/imagePicker/all.svg?style=flat-square)](https://github.com/Dhaval2404/ImagePicker/releases)
@@ -18,10 +18,12 @@
   <a href="https://github.com/dhaval2404/imagepicker/graphs/contributors">
     contributors
   </a>
+  <sub>Forked by
+    <a href="https://twitter.com/ceciliadev">ceciliadev</a>
 </div>
 <br/>
 
-Easy to use and configurable library to **Pick an image from the Gallery or Capture image using Camera**. It also allows to **Crop and Compresses the Image based on Aspect Ratio, Resolution and Image Size**.
+Easy to use and configurable library to **Pick an image from the Gallery or Capture image (or video) using Camera**. It also allows to **Crop and Compresses the Image based on Aspect Ratio, Resolution and Image Size**.
 
 Almost 90% of the app that I have developed has an Image upload feature. Along with the image selection, Sometimes  I needed a crop feature for profile image for that I've used uCrop. Most of the time I need to compress the image as the image captured from the camera is more than 5-10 MBs and sometimes we have a requirement to upload images with specific resolution/size, in that case, image compress is the way to go option. To simplify the image pick/capture option I have created ImagePicker library. I hope it will be useful to all.
 
@@ -30,6 +32,7 @@ Almost 90% of the app that I have developed has an Image upload feature. Along w
 * Pick Gallery Image
 * Pick Image from Google Drive
 * Capture Camera Image
+* **Record Video with Camera** 🆙
 * Crop Image (Crop image based on provided aspect ratio or let user choose one)
 * Compress Image (Compress image based on provided resolution and size)
 * Retrieve Image Result as Uri object (Retrieve as File object feature is removed in v2.0 to support scope storage)
@@ -87,6 +90,9 @@ Almost 90% of the app that I have developed has an Image upload feature. Along w
             .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
             .start()
     ```
+
+    **update**
+    added ** .cameraType(CameraType) ** to open the camera to record a video or shoot a photo </div>
 
 3. Handling results
 

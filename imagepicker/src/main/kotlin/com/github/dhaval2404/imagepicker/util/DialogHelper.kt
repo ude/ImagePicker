@@ -19,7 +19,7 @@ import com.github.dhaval2404.imagepicker.listener.ResultListener
 internal object DialogHelper {
 
     /**
-     * Show Image Provide Picker Dialog. This will streamline the code to pick/capture image
+     * Show Provider Picker Dialog. This will streamline the code to pick/capture image or video
      *
      */
     fun showChooseAppDialog(

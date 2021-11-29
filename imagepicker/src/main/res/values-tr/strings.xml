@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name" translatable="false">Image Picker</string>
-    <string name="image_picker_provider_authority_suffix" translatable="false">.imagepicker.provider</string>
 
     <string name="title_choose_image_provider">Seç</string>
     <string name="action_cancel">Vazgeç</string>

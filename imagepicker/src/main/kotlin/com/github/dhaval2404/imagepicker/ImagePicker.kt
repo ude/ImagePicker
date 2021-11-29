@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.github.dhaval2404.imagepicker.constant.CameraType
 import com.github.dhaval2404.imagepicker.constant.ImageProvider
 import com.github.dhaval2404.imagepicker.listener.DismissListener
 import com.github.dhaval2404.imagepicker.listener.ResultListener
@@ -26,6 +27,7 @@ open class ImagePicker {
 
         internal const val EXTRA_IMAGE_PROVIDER = "extra.image_provider"
         internal const val EXTRA_CAMERA_DEVICE = "extra.camera_device"
+        internal const val EXTRA_CAMERA_TYPE = "extra.camera_type"
 
         internal const val EXTRA_IMAGE_MAX_SIZE = "extra.image_max_size"
         internal const val EXTRA_CROP = "extra.crop"
@@ -79,6 +81,9 @@ open class ImagePicker {
 
         // Image Provider
         private var imageProvider = ImageProvider.BOTH
+
+        // Camera Provider
+        private var cameraType = CameraType.CAMERA_PHOTO
 
         // Mime types restrictions for gallery. by default all mime types are valid
         private var mimeTypes: Array<String> = emptyArray()
@@ -138,6 +143,12 @@ open class ImagePicker {
         // @Deprecated("Please use provider(ImageProvider.CAMERA) instead")
         fun cameraOnly(): Builder {
             this.imageProvider = ImageProvider.CAMERA
+            return this
+        }
+
+
+        fun cameraType(cameraType: CameraType): Builder {
+            this.cameraType = cameraType
             return this
         }
 
@@ -338,6 +349,7 @@ open class ImagePicker {
             return Bundle().apply {
                 putSerializable(EXTRA_IMAGE_PROVIDER, imageProvider)
                 putStringArray(EXTRA_MIME_TYPES, mimeTypes)
+                putSerializable(EXTRA_CAMERA_TYPE, cameraType)
 
                 putBoolean(EXTRA_CROP, crop)
                 putFloat(EXTRA_CROP_X, cropX)

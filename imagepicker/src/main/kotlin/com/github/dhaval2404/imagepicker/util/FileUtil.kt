@@ -12,8 +12,7 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import java.util.*
 
 /**
  * File Utility Methods
@@ -29,7 +28,7 @@ object FileUtil {
      *
      * Default it will take Camera folder as it's directory
      *
-     * @param fileDir File Folder in which file needs tobe created.
+     * @param fileDir File Folder in which file needs to be created.
      * @param extension String Image file extension.
      * @return Return Empty file to store camera image.
      * @throws IOException if permission denied of failed to create new file.
@@ -55,6 +54,21 @@ object FileUtil {
             ex.printStackTrace()
             return null
         }
+    }
+
+    /**
+     * Get Video File
+     *
+     * Default it will take Camera folder as it's directory
+     *
+     * @param fileDir File Folder in which file needs to be created.
+     * @param extension String Video file extension.
+     * @return Return Empty file to store camera video.
+     * @throws IOException if permission denied of failed to create new file.
+     */
+    fun getVideoFile(fileDir: File, extension: String? = null): File? {
+        val ext = extension ?: ".mp4"
+        return getImageFile(fileDir, ext)
     }
 
     private fun getFileName() = "IMG_${getTimestamp()}"

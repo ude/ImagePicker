@@ -10,6 +10,7 @@ import androidx.core.app.ActivityCompat.requestPermissions
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.github.dhaval2404.imagepicker.ImagePickerActivity
 import com.github.dhaval2404.imagepicker.R
+import com.github.dhaval2404.imagepicker.constant.CameraType
 import com.github.dhaval2404.imagepicker.util.FileUtil
 import com.github.dhaval2404.imagepicker.util.IntentUtils
 import com.github.dhaval2404.imagepicker.util.PermissionUtil
@@ -22,7 +23,7 @@ import java.io.File
  * @version 1.0
  * @since 04 January 2019
  */
-class CameraProvider(activity: ImagePickerActivity) : BaseProvider(activity) {
+class CameraProvider(activity: ImagePickerActivity, private val cameraType: CameraType) : BaseProvider(activity) {
 
     companion object {
         /**
@@ -117,15 +118,26 @@ class CameraProvider(activity: ImagePickerActivity) : BaseProvider(activity) {
      * Create Temporary File object and Pass it to Camera Intent
      */
     private fun startCameraIntent() {
-        // Create and get empty file to store capture image content
-        val file = FileUtil.getImageFile(fileDir = mFileDir)
-        mCameraFile = file
-
+        mCameraFile = when (cameraType) {
+            CameraType.CAMERA_PHOTO -> {
+                // Create and get empty file to store capture image content
+                val file = FileUtil.getImageFile(fileDir = mFileDir)
+                file
+            }
+            CameraType.CAMERA_VIDEO -> {
+                val file = FileUtil.getVideoFile(fileDir = mFileDir)
+                file
+            }
+        }
         // Check if file exists
-        if (file != null && file.exists()) {
-            val cameraIntent = IntentUtils.getCameraIntent(this, file)
-            activity.startActivityForResult(cameraIntent, CAMERA_INTENT_REQ_CODE)
-        } else {
+        mCameraFile?.let { file ->
+            if (file.exists()) {
+                val cameraIntent = IntentUtils.getCameraIntent(this, cameraType, file)
+                activity.startActivityForResult(cameraIntent, CAMERA_INTENT_REQ_CODE)
+            } else {
+                setError(R.string.error_failed_to_create_camera_image_file)
+            }
+        } ?: run {
             setError(R.string.error_failed_to_create_camera_image_file)
         }
     }
