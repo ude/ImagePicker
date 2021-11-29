@@ -146,7 +146,9 @@ open class ImagePicker {
             return this
         }
 
-
+        /**
+         * Choose to record video or shoot photo
+         */
         fun cameraType(cameraType: CameraType): Builder {
             this.cameraType = cameraType
             return this
