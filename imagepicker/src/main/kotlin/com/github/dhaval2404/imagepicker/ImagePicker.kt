@@ -38,7 +38,7 @@ open class ImagePicker {
         internal const val EXTRA_SAVE_DIRECTORY = "extra.save_directory"
 
         internal const val EXTRA_ERROR = "extra.error"
-        internal const val EXTRA_FILE_PATH = "extra.file_path"
+        const val EXTRA_FILE_PATH = "extra.file_path"
         internal const val EXTRA_MIME_TYPES = "extra.mime_types"
 
         /**
