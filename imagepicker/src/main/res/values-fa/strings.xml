@@ -3,8 +3,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">انتخاب</string>
     <string name="action_cancel">لغو</string>
-    <string name="title_gallery">گالری</string>
-    <string name="title_camera">دوربین</string>
+    <string name="chooser_gallery">گالری</string>
+    <string name="chooser_camera">دوربین</string>
 
     <string name="permission_camera_denied">
         <![CDATA[دسترسی فضای خارجی برای گرفتن عکس لازم است. لطفا دسترسی فضای خارجی را از تنظیمات فعال کنید < دسترسی ها]]></string>

@@ -2,8 +2,8 @@
 
     <string name="title_choose_image_provider">Seç</string>
     <string name="action_cancel">Vazgeç</string>
-    <string name="title_gallery">Galeri</string>
-    <string name="title_camera">Kamera</string>
+    <string name="chooser_gallery">Galeri</string>
+    <string name="chooser_camera">Kamera</string>
 
     <string name="permission_camera_denied">
         <![CDATA[Fotoğraf çekmek için kamera izni gerekiyor. Lütfen Ayarlar > İzinler\'den izin verin.]]></string>

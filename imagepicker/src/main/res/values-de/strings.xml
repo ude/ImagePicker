@@ -1,8 +1,8 @@
 <resources>
     <string name="title_choose_image_provider">Auswählen</string>
     <string name="action_cancel">Abbrechen</string>
-    <string name="title_gallery">Galerie</string>
-    <string name="title_camera">Kamera</string>
+    <string name="chooser_gallery">Galerie</string>
+    <string name="chooser_camera">Kamera</string>
     
     <string name="permission_camera_denied">
         <![CDATA[Die Berechtigung zum Zugriff auf den externen Speicher ist notwendig um ein Foto aufzunehmen. Bitte erlaube den Zugriff unter Einstellungen > Berechtigungen.]]></string>

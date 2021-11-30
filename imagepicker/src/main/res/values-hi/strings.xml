@@ -4,8 +4,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">चुनें</string>
     <string name="action_cancel">रद्द करें</string>
-    <string name="title_gallery">गेलरी</string>
-    <string name="title_camera">कैमरा</string>
+    <string name="chooser_gallery">गेलरी</string>
+    <string name="chooser_camera">कैमरा</string>
 
     <string name="permission_camera_denied">
         <![CDATA[चित्र लेने के लिए संग्रहण अनुमति की आवश्यकता होती है। कृपया सेटिंग्स> अनुमतियों से भंडारण की अनुमति दें।]]></string>

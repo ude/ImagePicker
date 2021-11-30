@@ -2,8 +2,8 @@
 
     <string name="title_choose_image_provider">Choisir</string>
     <string name="action_cancel">Annuler</string>
-    <string name="title_gallery">Galerie</string>
-    <string name="title_camera">Caméra</string>
+    <string name="chooser_gallery">Galerie</string>
+    <string name="chooser_camera">Caméra</string>
 
     <string name="permission_camera_denied">
         <![CDATA[L\'autorisation de l\'appareil photo est nécessaire pour prendre une photo. Veuillez autoriser la permission à partir des paramètres> Permissions.]]></string>

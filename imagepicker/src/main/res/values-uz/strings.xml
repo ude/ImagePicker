@@ -2,8 +2,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">Tanlang</string>
     <string name="action_cancel">Bekor qilish</string>
-    <string name="title_gallery">Galereya</string>
-    <string name="title_camera">Kamera</string>
+    <string name="chooser_gallery">Galereya</string>
+    <string name="chooser_camera">Kamera</string>
 
     <string name="permission_camera_denied">
         <![CDATA[Rasmga olish uchun kameradan foydalanishga ruhsat berilishi kerak. Iltimos sozlamalardan ushbu ruhsatni amalga oshiring Sozlamalar > Ruhsatlar.]]></string>

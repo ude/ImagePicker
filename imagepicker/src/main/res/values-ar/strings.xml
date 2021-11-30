@@ -4,8 +4,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">إختيار</string>
     <string name="action_cancel">إلغاء</string>
-    <string name="title_gallery">معرض الصور</string>
-    <string name="title_camera">كاميرا</string>
+    <string name="chooser_gallery">معرض الصور</string>
+    <string name="chooser_camera">كاميرا</string>
 
     <string name="permission_camera_denied">
         <![CDATA[البرنامج بحاجة إلى صلاحية الولوج إلى وحدة تخزين الجهاز لالتقاط الصورة. يرجى تفعيل صلاحية التخزين إنطلاقاً من الإعدادات > الترخيص.]]></string>

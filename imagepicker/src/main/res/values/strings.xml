@@ -4,8 +4,8 @@
 
     <string name="title_choose_image_provider">Choose</string>
     <string name="action_cancel">Cancel</string>
-    <string name="title_gallery">Gallery</string>
-    <string name="title_camera">Camera</string>
+    <string name="chooser_gallery">Gallery</string>
+    <string name="chooser_camera">Camera</string>
 
      <string name="permission_camera_denied">"         <![CDATA[Camera permission is needed to take a picture. Please allow permission from Settings > Permissions.]]>"</string>
 

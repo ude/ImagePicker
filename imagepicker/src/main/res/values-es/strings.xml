@@ -4,8 +4,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">Elegir</string>
     <string name="action_cancel">Cancelar</string>
-    <string name="title_gallery">Galeria</string>
-    <string name="title_camera">Cámara</string>
+    <string name="chooser_gallery">Galeria</string>
+    <string name="chooser_camera">Cámara</string>
 
     <string name="permission_camera_denied">
         <![CDATA[Se necesitan permisos de Almacenamiento para tomar imágenes. Por favor activa todos los permisos solicitados en Ajustes > Permisos.]]></string>

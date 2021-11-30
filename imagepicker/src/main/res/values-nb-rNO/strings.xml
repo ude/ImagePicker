@@ -3,8 +3,8 @@
     <!-- ImagePicker string resource start -->
     <string name="title_choose_image_provider">Velg</string>
     <string name="action_cancel">Avbryt</string>
-    <string name="title_gallery">Galleri</string>
-    <string name="title_camera">Kamera</string>
+    <string name="chooser_gallery">Galleri</string>
+    <string name="chooser_camera">Kamera</string>
 
     <string name="permission_camera_denied">
         <![CDATA[Lagrings-tillatelse trengs for å ta bilde. Du kan endre tillatelser i Innstillinger > Tillatelser.]]></string>

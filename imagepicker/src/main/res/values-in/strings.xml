@@ -1,8 +1,8 @@
 <resources>
     <string name="title_choose_image_provider">Pilih</string>
     <string name="action_cancel">Batal</string>
-    <string name="title_gallery">Galeri</string>
-    <string name="title_camera">Kamera</string>
+    <string name="chooser_gallery">Galeri</string>
+    <string name="chooser_camera">Kamera</string>
 
     <string name="permission_camera_denied">
         <![CDATA[Untuk mengambil gambar dibutuhkan akses perizinan penyimpanan. Mohon berikan perizinan tersebut melalui Pengaturan > Perizinan.]]></string>
