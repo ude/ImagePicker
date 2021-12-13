@@ -61,13 +61,9 @@ Almost 90% of the app that I have developed has an Image upload feature. Along w
 	```
 
     ```groovy
-   implementation 'com.github.dhaval2404:imagepicker:2.1'
+   implementation 'com.github.ceciliadev:ImagePicker:3.1'
     ```
-
-   **If you are yet to Migrate on AndroidX, Use support build artifact:**
-   ```groovy
-   implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
-    ```
+	
 
 
 2. The ImagePicker configuration is created using the builder pattern.
