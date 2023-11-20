@@ -142,8 +142,8 @@ object FileUtil {
      */
     fun getTempFile(context: Context, uri: Uri): File? {
         try {
-            val destination = File(context.cacheDir, "image_picker.png")
 
+            val destination = File(context.cacheDir, "image_picker.jpg")
             val parcelFileDescriptor = context.contentResolver.openFileDescriptor(uri, "r")
             val fileDescriptor = parcelFileDescriptor?.fileDescriptor ?: return null
 
